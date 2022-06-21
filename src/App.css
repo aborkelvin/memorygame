@@ -1,38 +1,71 @@
+:root{
+  --body-bg-color1:rgb(201, 199, 193);
+  --body-bg-color2:#E9D7C8;
+  --body-bg-color3:#F7F2ED;
+}
+
+
 .App {
-  text-align: center;
+  text-align: center;  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color:var(--body-bg-color1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2{
+  margin: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.scores{
+  display: inline-block;
+}
+
+.cardcontainer{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  margin:10px ;  
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.card{
+  width:280px;
+  height: 320px;
+  margin: 10px;
+  display: inline-block;
+  background-color: rgb(218, 189, 164);
+  border: 5px solid rgb(228, 226, 209);
+  padding: 5px 5px 5px 5px;
+  border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card:hover{
+  cursor: pointer;
 }
+
+.image{
+  width: 90%;
+  height: 75%;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 10px auto;
+  background-color: rgb(204, 170, 141);
+}
+
+svg{
+  width: 90%;
+  height: 95%;
+  border-radius: 10px; 
+}
+
+.cardname{
+  margin: 0 auto;
+  background-color: rgb(204, 170, 141);
+  width: 90%;
+  height: 12%;
+  border-radius: 10px;
+  color: #120C07;
+
+}
+
+
